@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>一個永恆的難題</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- 第一頁：信封 -->
+    <div id="envelope-page" class="page">
+        <img id="envelope-image" src="images/letter.png" alt="一封信">
+    </div>
+
+    <!-- 第二頁：信紙 -->
+    <div id="letter-page" class="page hidden">
+        <div class="poem-text">
+            <p>承諾是座堅固的堡壘，無法被竄改的代碼，<br>許下了那永恆的誓言，能抵禦駭客的謊言。</p>
+            <p>激情是道飛馳的閃電，一瞬處理萬次心跳，<br>讓整個世界為之燃燒，那炙熱不滅的烈焰。</p>
+            <p>親密是片平等的星空，萬千節點同步共鳴，<br>宇宙只剩彼此的感知，以及最真實的呼吸。</p>
+            <p>可堡壘使閃電成燭光，烈焰讓星空變孤單，<br>而平等的每一顆星星，都無法守護那城牆。</p>
+            <p>這便是那道無解習題，橫亙在冰冷的代碼，<br>與那熾熱的心跳之間，這是個永恆的難題。</p>
+        </div>
+    </div>
+
+    <!-- 第三頁：遊戲容器 -->
+    <div id="game-container" class="page hidden">
+        <h1>踩地雷</h1>
+        <div class="status">
+            <span>剩餘地雷: <span id="mines-count">0</span></span>
+            <button id="reset-button">重新開始</button>
+        </div>
+        <div id="game-board" class="game-board"></div>
+        <div class="penalty-box">
+            <div id="penalty-timer" class="hidden"></div>
+            <div id="hint-container" class="hidden">
+                <span>提示一：</span>
+                <img src="images/bitcoin.png" alt="比特幣">
+                <span class="arrow">→</span>
+                <img src="images/ethereum.png" alt="以太幣">
+                <span class="arrow">→</span>
+                <img src="images/polkadot.png" alt="波卡">
+            </div>
+        </div>
+    </div>
+    
+    <!-- 工具彈出選單 -->
+    <div id="tool-popup" class="hidden">
+        <img id="tool-shovel" src="images/shovel.png" alt="挖掘" title="挖掘">
+        <img id="tool-flag" src="images/flag.png" alt="插旗" title="插旗">
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
